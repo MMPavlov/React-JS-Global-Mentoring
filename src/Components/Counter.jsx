@@ -1,13 +1,18 @@
 import React from "react";
 
 class Counter extends React.PureComponent {
+  constructor() {
+    super();
+    this.increaseCounter = this.increaseCounter.bind(this);
+  }
+
   state = {
     counter: 0,
   };
 
-  increaseCounter = () => {
+  increaseCounter() {
     this.setState({ counter: this.state.counter + 1 });
-  };
+  }
 
   decreaseCounter = () => {
     this.setState({ counter: this.state.counter - 1 });
