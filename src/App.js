@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header1 from "./Components/Header1";
+import Header2 from "./Components/Header2";
+import Header3 from "./Components/Header3";
+import Header4 from "./Components/Header4";
+import Counter from "./Components/Counter";
+import SearchInput from "./Components/SearchInput";
+import GenreToggle from "./Components/GenreToggle";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header1 />
+      <Header2 />
+      <Header3 />
+      {Header4}
+      <Counter />
+      <SearchInput />
+      <GenreToggle />
     </div>
   );
 }
